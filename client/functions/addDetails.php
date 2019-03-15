@@ -1,6 +1,6 @@
 <?php
 require_once("./DB-config.php");
-if(isset($_GET['otp']) && isset($_GET['volume']) && isset($_GET['mass'])){
+if(isset($_POST['otp']) && isset($_GET['volume']) && isset($_GET['mass'])){
     $otp = $_GET['otp'];
     $volume = $_GET['volume'];
     $mass = $_GET['mass'];
