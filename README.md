@@ -1,10 +1,13 @@
 # PetroBYTES
+ ![LOGO](https://driller.000webhostapp.com/client/favicon.png)
+ 
  A one stop solution to prevent all SCAM in the Petroleum Distribution
  
 ### Prototype
 [PetroBYTES client](https://driller.000webhostapp.com/client/)
+
  
-### What are the Petroleum Scams ? 
+### :fuelpump: What are the Petroleum Scams ? 
 
 ##### Deviation (Specially for bikes):- (Involvement of two employees of gas station) :- 
 When your turn comes you go and park your vehicle firmly and say XXX rs then you open the tank lock of your bike/scooty at same movement the person standing close to you to collect money(second person) will say something to you just to deviate You But the moment you respond then fist person will start filling petrol and you will not able to see ZERO on it. Scam is done. Meter/machine will show 5L but you never know how much is actually in you tank. 
@@ -31,5 +34,5 @@ The user can next select the address of the petrol pump from the dropdown and su
 
 Using this data We aim to predict the average FLowrate Error and Adulteration for each Petrol Pump using Linerar Regression Model . This data will be Publicly Available and hence the user can decide which is the best petrolpump for him.It also creates a pressure on the petrol pump owners to act responsibly since the entire system becomes transparent.
 
-#### Developed By BYTES
+#### :coffee: Developed By BYTES
 Suggestions and Contributions are highly Appreciated
