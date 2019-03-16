@@ -164,7 +164,7 @@ try{
                 <div class="card-wrapper card-space">
                     <div class="card card-bg card-big border-bottom-card">
                         <div class="card-body">
-                        <div id="chartContainer" style="width:100%; height:300px;"></div>
+                            <div id="chartContainer<?php echo $row['id']; ?>" style="width:100%; height:300px;"></div>
                         </div>
                     </div>
                 </div>
@@ -249,41 +249,123 @@ unset($pdo);
     </footer>
 
     <script src="./js/bootstrap-italia.bundle.min.js"></script>
-    
+
     <script type="text/javascript" src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
     <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
     <script type="text/javascript">
-    window.onload = function() {
+    var i;
+    for (i = 1; i <= 5; i++) {
         var dataPoints = [];
-	 
+        var file = "";
+
         function getDataPointsFromCSV(csv) {
             var dataPoints = csvLines = points = [];
-            csvLines = csv.split(/[\r?\n|\r|\n]+/);         
-		        
+            csvLines = csv.split(/[\r?\n|\r|\n]+/);
+
             for (var i = 0; i < csvLines.length; i++)
                 if (csvLines[i].length > 0) {
                     points = csvLines[i].split(",");
-                    dataPoints.push({ 
-                        x: parseFloat(points[0]), 
-                        y: parseFloat(points[1]) 		
+                    dataPoints.push({
+                        x: parseFloat(points[0]),
+                        y: parseFloat(points[1])
                     });
                 }
             return dataPoints;
         }
-	
-	$.get("./ppa.csv", function(data) {
-	    var chart = new CanvasJS.Chart("chartContainer", {
-		    title: {
-		         text: "Transaction Density vs Fit Density",
-		    },
-		    data: [{
-		         type: "line",
-		         dataPoints: getDataPointsFromCSV(data)
-		      }]
-	     });
-		
-	      chart.render();
 
-	});
-  }
-</script>
+        switch (i) {
+            case 1:
+                file = "./ppa.csv";
+                $.get(file, function(data) {
+                    var chart = new CanvasJS.Chart("chartContainer1", {
+                        title: {
+                            text: "Transaction Density vs Fit Density",
+                        },
+                        data: [{
+                            type: "line",
+                            dataPoints: getDataPointsFromCSV(data)
+                        }]
+                    });
+
+                    chart.render();
+
+                });
+
+                break;
+            case 2:
+                file = "./ppb.csv";
+                $.get(file, function(data) {
+                    var chart = new CanvasJS.Chart("chartContainer2", {
+                        title: {
+                            text: "Transaction Density vs Fit Density",
+                        },
+                        data: [{
+                            type: "line",
+                            dataPoints: getDataPointsFromCSV(data)
+                        }]
+                    });
+
+                    chart.render();
+
+                });
+
+                break;
+            case 3:
+                file = "./ppc.csv";
+                $.get(file, function(data) {
+                    var chart = new CanvasJS.Chart("chartContainer3", {
+                        title: {
+                            text: "Transaction Density vs Fit Density",
+                        },
+                        data: [{
+                            type: "line",
+                            dataPoints: getDataPointsFromCSV(data)
+                        }]
+                    });
+
+                    chart.render();
+
+                });
+
+                break;
+            case 4:
+                file = "./ppd.csv";
+                $.get(file, function(data) {
+                    var chart = new CanvasJS.Chart("chartContainer4", {
+                        title: {
+                            text: "Transaction Density vs Fit Density",
+                        },
+                        data: [{
+                            type: "line",
+                            dataPoints: getDataPointsFromCSV(data)
+                        }]
+                    });
+
+                    chart.render();
+
+                });
+
+                break;
+            case 5:
+                file = "./ppe.csv";
+                $.get(file, function(data) {
+                    var chart = new CanvasJS.Chart("chartContainer5", {
+                        title: {
+                            text: "Transaction Density vs Fit Density",
+                        },
+                        data: [{
+                            type: "line",
+                            dataPoints: getDataPointsFromCSV(data)
+                        }]
+                    });
+
+                    chart.render();
+
+                });
+
+                break;
+        }
+
+
+    }
+    </script>
