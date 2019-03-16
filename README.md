@@ -7,7 +7,7 @@
 ### What are the Petroleum Scams ? 
 
 ##### Deviation (Specially for bikes):- (Involvement of two employees of gas station) :- 
-When your turn comes you go and park your vehicle firmly and say XXX rs then you open the tank lock of your bike/scooty at same movement the person standing close to you to collect money(second person) will say something to you just to deviate like .. what a nice shirt... bike nayi hai kya... bag jabardast lag raha hai..Sir we have a lottery ticket… anything like that and usually you respond either in a single word (Hmm) or with a short discussion. But the moment you respond then fist person will start filling petrol and you will not able to see ZERO on it. Scam is done. Meter/machine will show 5L but you never know how much is actually in you tank. 
+When your turn comes you go and park your vehicle firmly and say XXX rs then you open the tank lock of your bike/scooty at same movement the person standing close to you to collect money(second person) will say something to you just to deviate You But the moment you respond then fist person will start filling petrol and you will not able to see ZERO on it. Scam is done. Meter/machine will show 5L but you never know how much is actually in you tank. 
 Place : Almost every petrol pump in Pune.
 
 ##### Taking advantage of your comfort level (Only for four wheelers) :-  
@@ -19,3 +19,17 @@ You ask petrol pump employee to fill up petrol for 800 rs and they will stop fil
 
  ##### Disengaging the automated nozzle before the fuel stops 
 This happens in the automated nozzle petrol pumps. All of us think that these auto pumps are tamper proof but they are not. The auto nozzles have a nozzle trigger lock, which when triggered, stays on till there is flow of fuel in the pipe and automatically pops off when the fuel flow stops. The auto nozzle was designed to prevent fuel fraud but there is a small technicality that unscrupulous attendants use to their advantage. The technicality is – it’s possible to manually override the trigger lock.
+
+
+##### So how do we save you from all this ? 
+
+We have a Hardware component installed at each persons fuel tank . The hardware component consists of a FlowRate Sensor A nodeMCU module and a Weight Sensor (Not present in our domenstartion model) 
+This Sensor measures the amount of liquid flowing through a particular cross-section as well the mass of the liquid flown . Using this data an OTP is generated which sent to the owner of the vehicle . Using this OTP the user can view his details from the PetroBYTES Website
+The website then asks for the amount of petrol that he actually wanted and then calculates the amount of money he has been doped of 
+
+The user can next select the address of the petrol pump from the dropdown and submit this data to a database.
+
+Using this data We aim to predict the average FLowrate Error and Adulteration for each Petrol Pump using Linerar Regression Model . This data will be Publicly Available and hence the user can decide which is the best petrolpump for him.It also creates a pressure on the petrol pump owners to act responsibly since the entire system becomes transparent.
+
+#### Developed By BYTES
+Suggestions and Contributions are highly Appreciated
