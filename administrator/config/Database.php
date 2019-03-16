@@ -2,9 +2,9 @@
 class Database {
     //DB params
     private $host = "localhost";
-    private $dbname = "temp";
-    private $username="root";
-    private $password = "123456";
+    private $dbname = "id8983458_bytes";
+    private $username="id8983458_root";
+    private $password = "ankeshraj";
     private $conn;
 
     //DB connect
