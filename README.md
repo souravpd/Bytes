@@ -41,5 +41,5 @@ Using this data We aim to predict the average FLowrate Error and Adulteration fo
 The system has been Updated For Five Petrol Pumps namely A to E
 Additional Datasets have been used for correctly doing the data Analysis
 
-#### :coffee: Developed By BYTES
+#### :coffee: Developed By Sourav Prasad (BYTES)
 Suggestions and Contributions are highly Appreciated
