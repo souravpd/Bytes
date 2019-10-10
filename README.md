@@ -1,7 +1,7 @@
 # PetroBYTES
  ![LOGO](https://driller.000webhostapp.com/client/favicon.png)
  
- A one stop solution to prevent all SCAM in the Petroleum Distribution
+ A one stop solution to prevent all SCAM in the Petroleum Distribution and Petrol Stations
  
 ### Prototype
 [PetroBYTES client](https://driller.000webhostapp.com/client/)
